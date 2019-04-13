@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //¿mi número es multiplo de 13
+
+        var number = 13;
+
+        if(number%13 === 0) {
+            console.log('Tu número es multiplo de 13');
+        }else {
+            console.error('Tu número no es multiplo de 13');
+            
+        }
+
+        //el producto de dos números es un número par menor que 30, si no, es mayor o igual que 30 menor que 50
+
+        var number_2 = 40 * 3;
+
+        if(number_2%2 === 0 && number_2 < 30) {
+            console.log('Tu número es par y menor que 30');
+        }else if (number_2%2 === 0 && number_2>=30 && number_2< 50) {
+            console.log('Tu número es mayor o igual que 30 y menor que 50');
+        }else {
+            console.error('Tu número no cumple con las condiciones');
+        }
+    </script>
+</body>
+</html>

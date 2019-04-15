@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Tarea-Segunda-Clase</title>
+   </head>
+   <body>
+      <script>
+
+         //imprimir el número de vocales = a repetidas en las siguientes palabras: hoooolaa array amarilla palidromo
+             //sin metodo
+             var first = 'hoooolaa';
+             var second = 'array';
+             var third = 'amarilla';
+             var quarter = 'palidromo';
+             var total_first = 0;
+             var total_second = 0;
+             var total_third = 0;
+             var total_quarter = 0;
+             
+             for (var i = 0; i<first.length; i++) {
+                 if(first[i] === 'a') {
+                     total_first++
+                 }
+                 
+             }
+             console.log('Hola, la palabra ' + first + ' tiene ' + total_first + ' a.');
+         
+             for (var j = 0; j < second.length; j++) {
+                     if (second[j] === 'a') {
+                         total_second++
+                     }
+                 }
+             console.log('Hola, la palabra ' + second + ' tiene ' + total_second + ' a.');
+             
+             for (var k = 0; k < third.length; k++) {
+                     if (third[k] === 'a') {
+                         total_third++
+                     }
+                 }
+             console.log('Hola, la palabra ' + third + ' tiene ' + total_third + ' a.');
+         
+             for (var l = 0; l < quarter.length; l++) {
+                 if (quarter[l] === 'a') {
+                     total_quarter++
+                 }
+             }
+             console.log('Hola, la paralabra ' + quarter + ' tiene ' + total_quarter + ' a.');
+         
+             //si son mayusculas o minusculas decir cuantas vocales repetidas hay
+         
+             var count = 0;
+             var text = 'aMARIiiLlaa';
+             var vocals = 'AEIOU';
+             var vocales = 'aeiou';
+             var total_repetidas = 0;
+             
+             for (var i = 0; i < vocals.length; i++) {
+                 for ( var j = 0; j < text.length; j++) {
+                     if (text[j] === vocals[i]) {
+                         count+=1;
+                     }
+                 }
+                 }
+         
+             for (var k = 0; k <vocales.length; k++) {
+                     for ( var m = 0; m < text.length; m++) {
+                         if ( text[m] === vocales[k]) {
+                             total_repetidas++
+                         }
+                     }
+                 
+             }
+             
+                     console.log('La palabra ' + text + ' tiene '  + count + ' vocales mayúsculas y se repiten ' + total_repetidas + ' vocales minúsculas.');
+             
+             
+             // INPUT ogaag
+             // Output AgAOOg
+         
+             if(word1 = 'ogaag') {
+                 var word2 = word1.replace('ogaag', 'AgAOOg');
+                 // console.log(word2);
+             }
+             console.log('Tu palabra original es ' + word1);
+             console.log('El replazo de la palabra inicial es ' + word2);
+             
+             // checar si la palabra ingresada es un palindromo o no
+
+             var fruits = ['m', 'a', 'r', 'i'];
+             var m = fruits.reverse();
+               console.log(fruits.reverse());
+                fruits.reverse();
+                // for ( var = 1; i < fruits.length; i++) {
+                //     if ( fruits [i] === )
+                
+             if (fruits === fruits.reverse()) {
+                console.log('Tu nombre es palidromo');
+             } else {
+                 console.log('Tu nombre no es un palidromo');
+                 
+             }
+             
+      </script>
+   </body>
+</html>

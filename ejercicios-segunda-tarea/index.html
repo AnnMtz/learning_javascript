@@ -8,7 +8,6 @@
    </head>
    <body>
       <script>
-
          //imprimir el número de vocales = a repetidas en las siguientes palabras: hoooolaa array amarilla palidromo
              //sin metodo
              var first = 'hoooolaa';
@@ -89,17 +88,30 @@
              
              // checar si la palabra ingresada es un palindromo o no
 
-             var fruits = ['m', 'a', 'r', 'i'];
-             var m = fruits.reverse();
-               console.log(fruits.reverse());
-                fruits.reverse();
-                // for ( var = 1; i < fruits.length; i++) {
-                //     if ( fruits [i] === )
-                
-             if (fruits === fruits.reverse()) {
-                console.log('Tu nombre es palidromo');
+             var nombre = 'Monse';
+             var nombre_1 = nombre.substr(0,1)
+             var nombre_2 = nombre.substr(1,1)
+             var nombre_3 = nombre.substr(2,1)
+             var nombre_4 = nombre.substr(3,1)
+             var nombre_5 = nombre.substr(4,1)
+             var res = nombre_5.concat(nombre_4, nombre_3, nombre_2, nombre_1)
+
+             if (nombre === res) {
+                 console.log('Tu nombre es un palíndromo');
              } else {
-                 console.log('Tu nombre no es un palidromo');
+                 console.log('Tu nombre no es un palíndromo');
+             }
+
+             var name = 'ana';
+             var name_1 = name.substr(0,1);
+             var name_2 = name.substr(1,1);
+             var name_3 = name.substr(2,1);
+             var res_1 = name_3.concat(name_2, name_1);
+                 
+             if (name === res_1) {
+                 console.log('Tu nombre es un palíndromo');
+             } else {
+                 console.log('Tu nombre no es un palíndromo');
                  
              }
              

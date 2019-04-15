@@ -87,6 +87,7 @@
              console.log('El replazo de la palabra inicial es ' + word2);
              
              // checar si la palabra ingresada es un palindromo o no
+             //ejemplo palabra no palíndromo
 
              var nombre = 'Monse';
              var nombre_1 = nombre.substr(0,1)
@@ -97,10 +98,12 @@
              var res = nombre_5.concat(nombre_4, nombre_3, nombre_2, nombre_1)
 
              if (nombre === res) {
-                 console.log('Tu nombre es un palíndromo');
+                 console.log('Tu nombre ' + nombre + ' es un palíndromo');
              } else {
-                 console.log('Tu nombre no es un palíndromo');
+                 console.log('Tu nombre ' + nombre +  ' no es un palíndromo');
              }
+
+             //ejemplo palabra palíndromo
 
              var name = 'ana';
              var name_1 = name.substr(0,1);
@@ -109,9 +112,9 @@
              var res_1 = name_3.concat(name_2, name_1);
                  
              if (name === res_1) {
-                 console.log('Tu nombre es un palíndromo');
+                 console.log('Tu nombre ' + name + ' es un palíndromo');
              } else {
-                 console.log('Tu nombre no es un palíndromo');
+                 console.log('Tu nombre ' + name + ' no es un palíndromo');
                  
              }
              

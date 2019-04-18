@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cars = ['Volvo', 'BMW', 'Saab'];
+        cars.splice(1, 0, 'Honda');
+        console.log(cars);
+
+        function suma(a , b) {
+            var resultado = a + b
+            return resultado
+        }
+
+        console.log(suma(1,1));
+
+        function sum(a, b, c) {
+            var resultado
+            if (c== undefined) {
+                resultado = a +b
+            } else {
+                resultado = a +b + c
+            }
+            return resultado
+        }
+
+        console.log(sum(1,1));
+        console.log(sum(1,1,1));
+
+        function su(numeros) {
+            var resultado = 0
+            for (var i = 0; i < numeros.length; i++) {
+                var numero = numeros[i]
+                resultado += numero
+            }
+            return resultado
+        }
+
+        console.log(su([1,2,3,4]));
+
+        var multiplicar = function (a,b) { /*funciones anonimas*/
+            return a*b;
+        };
+
+        console.log(multiplicar(2,2));
+        
+        /*var multiply = () => { /*arrow flecha
+
+        }*/
+
+        // function isCarlos (nombre) {
+        //     if (nombre === 'Carlos') { /*if en una sola línea*/
+        //         return true
+        //     }
+        //     return false
+        // }
+
+        // console.log(isCarlos('Carlos'));
+        // console.log(isCarlos('luis'));
+
+        // function isCarlos(nombre) {
+        //     return (nombre === 'carlos') ? true: false /*ternario*/
+        // }
+        
+        // console.log(isCarlos('carlos'));
+        
+        // var isCarlos = (nombre) => nombre === 'carlos'; arrow funcion
+
+        // console.log(isCarlos('carlos'));
+        
+        // cars.forEach(function(coche, index) {
+        //     if (index % 2 === 0) {
+        //         console.log('carro: ', coche);
+        //     } else {
+        //         console.log('carro: ', otro);
+                
+        //     }
+            
+        // });
+
+        var lista = cars.map(function(coche, index) {
+            var numero = index + 1
+            var entradaEnLista = numero.toString() + ' ' + coche;
+            return entradaEnLista;
+        });
+
+        console.log(lista);
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

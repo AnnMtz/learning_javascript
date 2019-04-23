@@ -12,7 +12,7 @@ for (var i = 0; i < size; i++) {
         string_pyramid += pyramid
         //console.log(pyramid_str); aquí se empieza a crear la pirámide invertida
     }
-    string_pyramid += "\n"
+    string_pyramid += '\n'
 }
 console.log(string_pyramid);
 

@@ -1,5 +1,5 @@
 //piramide invertida
-var size = parseInt(prompt('¿De que tamaño quieres la pirámide?'));
+var size = prompt('¿De que tamaño quieres la pirámide?');
 var string_pyramid = '';
 
 for (var i = 0; i < size; i++) {

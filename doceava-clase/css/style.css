@@ -1,0 +1,13 @@
+#container {
+    background-color: darkgoldenrod;
+    width: 100px;
+    height: 100px;
+}
+
+div.myStyle {
+    background-color: black!important;
+    color: bisque;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
